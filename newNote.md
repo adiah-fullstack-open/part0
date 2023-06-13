@@ -20,4 +20,8 @@ When a user creataes a new note on the page and clicks submit.
 sequenceDiagram
 	participant browser
 	participant server
+
+	browser->>server: POST https://fullstack-exampleapp.herokuapp.com/new_note
+	activate server
+	server-->>browser: 302
 ```
