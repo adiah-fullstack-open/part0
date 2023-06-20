@@ -8,7 +8,7 @@ sequenceDiagram
     server-->>browser: HTML document
     deactivate server
 
-	Note right of browser: Browser responds with code 304 (Not Modified)
+	Note right of browser: Server responds with code 304 (Not Modified)
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
     activate server
